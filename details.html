@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تفاصيل الباقات — forsafety</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8f9fa; --card:#ffffff; --text:#222; --muted:#667085;
+      --brand:#1b4965; --accent:#2f9e44; --accent-2:#e9f7ef; --shadow:0 10px 30px rgba(16,24,40,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Cairo",system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.8}
+    a{color:var(--brand);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    header{background:#fff;border-bottom:1px solid #eceff3}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{font-weight:700;color:var(--brand)}
+    .back{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700}
+    h1{margin:22px 0 8px;color:var(--brand);font-size:clamp(22px,3vw,32px)}
+    .lead{color:var(--muted);margin:0 0 14px}
+    .card{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    section{padding:26px 0}
+    .toc a{display:block;padding:10px 12px;border:1px solid #eef2f6;border-radius:10px;background:#fff;margin-bottom:8px}
+    .sec h2{margin:0 0 8px;color:var(--brand)}
+    .sec p{margin:0 0 10px;color:#384250}
+    figure{margin:8px 0 0}
+    figure img{width:100%;height:auto;border-radius:12px;border:1px solid #eef2f6}
+    figcaption{font-size:13px;color:#6b7280;margin-top:6px}
+    .badge{display:inline-block;background:var(--accent-2);color:var(--accent);padding:4px 10px;border-radius:999px;font-size:13px;margin-left:6px}
+    footer{padding:28px 0;text-align:center;background:#fff;border-top:1px solid #eceff3;margin-top:28px}
+    @media (max-width:520px){.topbar{flex-direction:column;gap:10px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="logo">forsafety</div>
+      <a class="back" href="index.html">العودة للصفحة الرئيسية</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>تفاصيل الباقات</h1>
+    <p class="lead">شرح مبسّط لكل عنصر داخل باقاتنا مع أمثلة وصور توضيحية.</p>
+
+    <!-- جدول محتويات -->
+    <section class="card toc" id="toc">
+      <strong>انتقل مباشرة إلى:</strong>
+      <div class="grid">
+        <a href="#atp">مسحات ATP <span class="badge">اختبار نظافة سطحي</span></a>
+        <a href="#practices">تقييم الممارسات والإجراءات</a>
+        <a href="#visits">عدد الزيارات الأسبوعية</a>
+        <a href="#weekly-pdf">التقارير الأسبوعية (PDF)</a>
+        <a href="#monthly-report">التقرير الشهري التفصيلي</a>
+        <a href="#storage-waste">تقليل هدر الطعام بسبب التخزين</a>
+      </div>
+    </section>
+
+    <!-- مسحات ATP -->
+    <section class="card sec" id="atp">
+      <h2>مسحات ATP</h2>
+      <p>مسحة ATP تقيس بقايا المواد العضوية على الأسطح (مثل الطاولات وأدراج التحضير) خلال ثوانٍ عبر قراءة رقمية (RLU). القراءة المنخفضة تعني نظافة أعلى.</p>
+      <ul>
+        <li>نُحدّد نقاط حرجة (أكثر أماكن اللمس)</li>
+        <li>نأخذ قراءات قبل وبعد التنظيف</li>
+        <li>نضع حدود قبول/رفض متفق عليها ونصدر توصيات فورية</li>
+      </ul>
+      <figure>
+        <img src="images/atp.jpg" alt="مسحة ATP على سطح عمل">
+        <figcaption>مثال على قياس ATP لسطح تحضير — استبدل الصورة بـ <code>images/atp.jpg</code>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- تقييم الممارسات -->
+    <section class="card sec" id="practices">
+      <h2>تقييم الممارسات والإجراءات</h2>
+      <p>مراجعة منهجية لممارسات العاملين وفق قوائم تحقق قياسية (درجات الحرارة، التبريد، منع التلوث التبادلي، النظافة الشخصية، التعقيم، وغيرها).</p>
+      <ul>
+        <li>ملاحظة مباشرة + أسئلة سريعة للعاملين</li>
+        <li>تقييم درجات حرارة الحفظ/التقديم</li>
+        <li>تحسين إجراءات الاستلام والتخزين والتحضير</li>
+      </ul>
+      <figure>
+        <img src="images/checklist.jpg" alt="قائمة تحقق سلامة غذائية">
+        <figcaption>قائمة تحقق للممارسات الحرجة — ضع صورتك في <code>images/checklist.jpg</code>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- الزيارات -->
+    <section class="card sec" id="visits">
+      <h2>عدد الزيارات الأسبوعية</h2>
+      <p>حسب الباقة المختارة، تتم زيارتك <strong>2–3 مرات أسبوعيًا</strong> للمتابعة السريعة وإغلاق الملاحظات قبل تفاقمها.</p>
+      <figure>
+        <img src="images/visit.jpg" alt="زيارة تفتيش دورية للموقع">
+        <figcaption>صورة توضيحية لزيارة تفتيش — ضعها باسم <code>images/visit.jpg</code>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- التقارير الأسبوعية -->
+    <section class="card sec" id="weekly-pdf">
+      <h2>التقارير الأسبوعية (PDF)</h2>
+      <p>تلخيص دقيق لكل زيارة مع قراءات ATP وتوصيات قابلة للتنفيذ، يُرسل بصيغة PDF ويُحفظ كسجل يمكن الرجوع إليه.</p>
+      <figure>
+        <img src="images/weekly_report.jpg" alt="نموذج تقرير أسبوعي">
+        <figcaption>نموذج تقرير أسبوعي — استبدل بـ <code>images/weekly_report.jpg</code>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- التقرير الشهري -->
+    <section class="card sec" id="monthly-report">
+      <h2>التقرير الشهري التفصيلي</h2>
+      <p>تحليل تجميعي للزيارات، مقارنة قراءات الأسابيع، ورسم منحنى التحسن، مع أولويات واضحة للعمل للأسبوع التالي.</p>
+      <figure>
+        <img src="images/monthly_report.jpg" alt="تقرير شهري تفصيلي">
+        <figcaption>تقرير شهري تفصيلي — ضع صورتك في <code>images/monthly_report.jpg</code>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- تقليل الهدر -->
+    <section class="card sec" id="storage-waste">
+      <h2>تقليل هدر الطعام بسبب التخزين</h2>
+      <p>تتبّع درجات حرارة التبريد/التجميد، التهوية، ترتيب FIFO، وإرشادات العمر التخزيني (Shelf Life) لخفض التلف والهدر.</p>
+      <figure>
+        <img src="images/storage.jpg" alt="ترتيب وتخزين المواد الغذائية">
+        <figcaption>تحسين التخزين لتقليل الهدر — الصورة في <code>images/storage.jpg</code>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- رجوع للأعلى -->
+    <section class="card" style="text-align:center">
+      <a href="#toc" class="back" style="background:#1b4965">العودة لأعلى الصفحة</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 forsafety — جميع الحقوق محفوظة
+    </div>
+  </footer>
+</body>
+</html>
